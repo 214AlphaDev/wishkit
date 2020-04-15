@@ -1,0 +1,15 @@
+mutation VoteForWish($id: UUIDV4!) {
+  vote(id: $id) {
+    wish {
+      id,
+      name,
+      description,
+      story,
+      votes,
+      votedOnIt,
+      category
+    },
+    votesLeft,
+    error
+  }
+}

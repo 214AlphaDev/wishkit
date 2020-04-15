@@ -1,0 +1,14 @@
+mutation CreateWish($name: WishName!, $description: WishDescription!, $story: WishStory, $category: Category!) {
+  create(name: $name, description: $description, story: $story, category: $category) {
+    wish {
+      id,
+      name,
+      description,
+      story,
+      votes,
+      votedOnIt,
+      category
+    },
+    error
+  }
+}

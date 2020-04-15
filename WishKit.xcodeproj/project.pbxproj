@@ -1,0 +1,1042 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F153475E2B63E587F5B3D7C /* Pods_WishKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD1DA3D7815E77F0388E24F9 /* Pods_WishKitTests.framework */; };
+		17441668228A108100715846 /* WishRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17441667228A108100715846 /* WishRepository.swift */; };
+		6711D70E61A11F0D9C507701 /* Pods_WishKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B094317FF6A41ECEFFBB39EA /* Pods_WishKitDemo.framework */; };
+		6805727F23129D8C0066F6C7 /* Category+ValueObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6805727E23129D8B0066F6C7 /* Category+ValueObject.swift */; };
+		6805728123129E3C0066F6C7 /* Category+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6805728023129E3C0066F6C7 /* Category+Mapping.swift */; };
+		6889A4BC228738C000DF5741 /* WishCreatePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6889A4BB228738C000DF5741 /* WishCreatePresenter.swift */; };
+		6889A4BE228763CE00DF5741 /* WishDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6889A4BD228763CE00DF5741 /* WishDetailsPresenter.swift */; };
+		6889A4CD2289478500DF5741 /* WishKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 6889A4CC2289478500DF5741 /* WishKit.podspec */; };
+		6889A4EB228AE6C100DF5741 /* WishKitDatabaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6889A4EA228AE6C100DF5741 /* WishKitDatabaseFactory.swift */; };
+		68F89B9D22835A4E00FC38B0 /* WishKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 68F89B9B22835A4E00FC38B0 /* WishKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68F89BAA22835AD000FC38B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F89BA922835AD000FC38B0 /* AppDelegate.swift */; };
+		68F89BCB22835F5700FC38B0 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F89BCA22835F5700FC38B0 /* API.swift */; };
+		68F89BDB228405B200FC38B0 /* ErrorDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F89BD8228405B200FC38B0 /* ErrorDescription.swift */; };
+		68F89BDD228405B200FC38B0 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F89BDA228405B200FC38B0 /* Errors.swift */; };
+		68F89BE12284067700FC38B0 /* UUIDV4+ValueObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F89BE02284067700FC38B0 /* UUIDV4+ValueObject.swift */; };
+		68F89BF422840D3600FC38B0 /* WishList+MVP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F89BF122840D3600FC38B0 /* WishList+MVP.swift */; };
+		68F89BFC22840D4400FC38B0 /* UUIDV4+ValueObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F89BFB22840D4400FC38B0 /* UUIDV4+ValueObject.swift */; };
+		68F89C0122840DC900FC38B0 /* WishServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F89BFE22840DC800FC38B0 /* WishServiceProtocol.swift */; };
+		68F89C0222840DC900FC38B0 /* WishService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F89C0022840DC800FC38B0 /* WishService.swift */; };
+		68F89C0422840DED00FC38B0 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F89C0322840DED00FC38B0 /* Response.swift */; };
+		68F89C082284105900FC38B0 /* WishRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F89C072284105900FC38B0 /* WishRepositoryProtocol.swift */; };
+		68F89C0A2284109E00FC38B0 /* WishBackendProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F89C092284109E00FC38B0 /* WishBackendProtocol.swift */; };
+		68F89C0C228415B600FC38B0 /* WishBackend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F89C0B228415B600FC38B0 /* WishBackend.swift */; };
+		68F89C0F228416AC00FC38B0 /* Wishes.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 68F89C0E228416AC00FC38B0 /* Wishes.graphql */; };
+		68F89C132284174D00FC38B0 /* WishItem+WishesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F89C122284174D00FC38B0 /* WishItem+WishesResponse.swift */; };
+		68F89C162284197E00FC38B0 /* VoteForWish.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 68F89C142284197E00FC38B0 /* VoteForWish.graphql */; };
+		68F89C172284197E00FC38B0 /* WithdrawVoteFromWish.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 68F89C152284197E00FC38B0 /* WithdrawVoteFromWish.graphql */; };
+		68F89C1922841B0600FC38B0 /* Errors+WishList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F89C1822841B0600FC38B0 /* Errors+WishList.swift */; };
+		68F89C1B22848CE400FC38B0 /* CreateWish.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 68F89C1A22848CE400FC38B0 /* CreateWish.graphql */; };
+		68F89C1E2284A89800FC38B0 /* WishCreate+MVP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F89C1C2284A89800FC38B0 /* WishCreate+MVP.swift */; };
+		68F89C1F2284A89800FC38B0 /* WishDetails+MVP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F89C1D2284A89800FC38B0 /* WishDetails+MVP.swift */; };
+		68F89C222284A8B700FC38B0 /* Wish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F89C202284A8B700FC38B0 /* Wish.swift */; };
+		68F89C232284A8B700FC38B0 /* CreatingWish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F89C212284A8B700FC38B0 /* CreatingWish.swift */; };
+		68F89C29228593E900FC38B0 /* WishListFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F89C28228593E900FC38B0 /* WishListFlow.swift */; };
+		68F89C2C228596BD00FC38B0 /* WishDetailsFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F89C2B228596BD00FC38B0 /* WishDetailsFlow.swift */; };
+		68F89C2E228598F900FC38B0 /* WishCreateFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F89C2D228598F900FC38B0 /* WishCreateFlow.swift */; };
+		68F89C31228599BA00FC38B0 /* WishListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F89C30228599BA00FC38B0 /* WishListPresenter.swift */; };
+		9A1B888025568E78EEC6BE06 /* Pods_WishKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A69E0A68CF2476CD78CE6E6C /* Pods_WishKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		68F89BC222835BAF00FC38B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68F89B8F22835A4E00FC38B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68F89BA622835AD000FC38B0;
+			remoteInfo = WishKitDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17441667228A108100715846 /* WishRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishRepository.swift; sourceTree = "<group>"; };
+		482F8F28F6D27B4BDFD8B0E1 /* Pods-WishKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WishKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WishKitDemo/Pods-WishKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		58C10B56302A7E8147E8637B /* Pods-WishKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WishKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WishKitTests/Pods-WishKitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6805727E23129D8B0066F6C7 /* Category+ValueObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Category+ValueObject.swift"; sourceTree = "<group>"; };
+		6805728023129E3C0066F6C7 /* Category+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Category+Mapping.swift"; sourceTree = "<group>"; };
+		6889A4BB228738C000DF5741 /* WishCreatePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishCreatePresenter.swift; sourceTree = "<group>"; };
+		6889A4BD228763CE00DF5741 /* WishDetailsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishDetailsPresenter.swift; sourceTree = "<group>"; };
+		6889A4CC2289478500DF5741 /* WishKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WishKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6889A4EA228AE6C100DF5741 /* WishKitDatabaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishKitDatabaseFactory.swift; sourceTree = "<group>"; };
+		68F89B9822835A4E00FC38B0 /* WishKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WishKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68F89B9B22835A4E00FC38B0 /* WishKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WishKit.h; sourceTree = "<group>"; };
+		68F89B9C22835A4E00FC38B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68F89BA722835AD000FC38B0 /* WishKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WishKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68F89BA922835AD000FC38B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		68F89BB522835AD300FC38B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68F89BBD22835BAF00FC38B0 /* WishKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WishKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68F89BC122835BAF00FC38B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68F89BCA22835F5700FC38B0 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		68F89BD8228405B200FC38B0 /* ErrorDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorDescription.swift; sourceTree = "<group>"; };
+		68F89BDA228405B200FC38B0 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		68F89BE02284067700FC38B0 /* UUIDV4+ValueObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UUIDV4+ValueObject.swift"; sourceTree = "<group>"; };
+		68F89BF122840D3600FC38B0 /* WishList+MVP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WishList+MVP.swift"; sourceTree = "<group>"; };
+		68F89BFB22840D4400FC38B0 /* UUIDV4+ValueObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UUIDV4+ValueObject.swift"; sourceTree = "<group>"; };
+		68F89BFE22840DC800FC38B0 /* WishServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishServiceProtocol.swift; sourceTree = "<group>"; };
+		68F89C0022840DC800FC38B0 /* WishService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishService.swift; sourceTree = "<group>"; };
+		68F89C0322840DED00FC38B0 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		68F89C072284105900FC38B0 /* WishRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishRepositoryProtocol.swift; sourceTree = "<group>"; };
+		68F89C092284109E00FC38B0 /* WishBackendProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishBackendProtocol.swift; sourceTree = "<group>"; };
+		68F89C0B228415B600FC38B0 /* WishBackend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishBackend.swift; sourceTree = "<group>"; };
+		68F89C0E228416AC00FC38B0 /* Wishes.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Wishes.graphql; sourceTree = "<group>"; };
+		68F89C122284174D00FC38B0 /* WishItem+WishesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WishItem+WishesResponse.swift"; sourceTree = "<group>"; };
+		68F89C142284197E00FC38B0 /* VoteForWish.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VoteForWish.graphql; sourceTree = "<group>"; };
+		68F89C152284197E00FC38B0 /* WithdrawVoteFromWish.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WithdrawVoteFromWish.graphql; sourceTree = "<group>"; };
+		68F89C1822841B0600FC38B0 /* Errors+WishList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Errors+WishList.swift"; sourceTree = "<group>"; };
+		68F89C1A22848CE400FC38B0 /* CreateWish.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CreateWish.graphql; sourceTree = "<group>"; };
+		68F89C1C2284A89800FC38B0 /* WishCreate+MVP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WishCreate+MVP.swift"; sourceTree = "<group>"; };
+		68F89C1D2284A89800FC38B0 /* WishDetails+MVP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WishDetails+MVP.swift"; sourceTree = "<group>"; };
+		68F89C202284A8B700FC38B0 /* Wish.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wish.swift; sourceTree = "<group>"; };
+		68F89C212284A8B700FC38B0 /* CreatingWish.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatingWish.swift; sourceTree = "<group>"; };
+		68F89C28228593E900FC38B0 /* WishListFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListFlow.swift; sourceTree = "<group>"; };
+		68F89C2B228596BD00FC38B0 /* WishDetailsFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishDetailsFlow.swift; sourceTree = "<group>"; };
+		68F89C2D228598F900FC38B0 /* WishCreateFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishCreateFlow.swift; sourceTree = "<group>"; };
+		68F89C30228599BA00FC38B0 /* WishListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListPresenter.swift; sourceTree = "<group>"; };
+		8CB3EC4771DDDFEF907E27F4 /* Pods-WishKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WishKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WishKitTests/Pods-WishKitTests.release.xcconfig"; sourceTree = "<group>"; };
+		9C28BDE3B2DB6A773AFE1A41 /* Pods-WishKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WishKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WishKitDemo/Pods-WishKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		A69E0A68CF2476CD78CE6E6C /* Pods_WishKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WishKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA21BDC30A40F6D0DD50ABD4 /* Pods-WishKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WishKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-WishKit/Pods-WishKit.release.xcconfig"; sourceTree = "<group>"; };
+		AD1DA3D7815E77F0388E24F9 /* Pods_WishKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WishKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B094317FF6A41ECEFFBB39EA /* Pods_WishKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WishKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8E8B71F59B566640AD0FDFB /* Pods-WishKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WishKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WishKit/Pods-WishKit.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68F89B9522835A4E00FC38B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A1B888025568E78EEC6BE06 /* Pods_WishKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68F89BA422835AD000FC38B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6711D70E61A11F0D9C507701 /* Pods_WishKitDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68F89BBA22835BAF00FC38B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F153475E2B63E587F5B3D7C /* Pods_WishKitTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17441666228A0FF100715846 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				17441667228A108100715846 /* WishRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		68F89B8E22835A4E00FC38B0 = {
+			isa = PBXGroup;
+			children = (
+				6889A4CC2289478500DF5741 /* WishKit.podspec */,
+				68F89B9A22835A4E00FC38B0 /* WishKit */,
+				68F89BA822835AD000FC38B0 /* WishKitDemo */,
+				68F89BBE22835BAF00FC38B0 /* WishKitTests */,
+				68F89B9922835A4E00FC38B0 /* Products */,
+				C408E1429869E08706C84B4C /* Pods */,
+				CAE68DC061CCEA6FF4A2A972 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		68F89B9922835A4E00FC38B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68F89B9822835A4E00FC38B0 /* WishKit.framework */,
+				68F89BA722835AD000FC38B0 /* WishKitDemo.app */,
+				68F89BBD22835BAF00FC38B0 /* WishKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68F89B9A22835A4E00FC38B0 /* WishKit */ = {
+			isa = PBXGroup;
+			children = (
+				68F89BD7228405B200FC38B0 /* Utils */,
+				68F89BD0228403AA00FC38B0 /* Types */,
+				68F89C062284103E00FC38B0 /* BackendProtocols */,
+				68F89BC822835F5700FC38B0 /* Backend */,
+				68F89C052284103400FC38B0 /* RepositoryProtocols */,
+				17441666228A0FF100715846 /* Repositories */,
+				68F89BFD22840DC800FC38B0 /* ServiceProtocols */,
+				68F89BFF22840DC800FC38B0 /* Services */,
+				68F89BCC2284030900FC38B0 /* MVPProtocols */,
+				68F89C26228592CB00FC38B0 /* Presenters */,
+				68F89C25228592C900FC38B0 /* Flows */,
+				68F89B9B22835A4E00FC38B0 /* WishKit.h */,
+				68F89B9C22835A4E00FC38B0 /* Info.plist */,
+				6889A4EA228AE6C100DF5741 /* WishKitDatabaseFactory.swift */,
+			);
+			path = WishKit;
+			sourceTree = "<group>";
+		};
+		68F89BA822835AD000FC38B0 /* WishKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				68F89BA922835AD000FC38B0 /* AppDelegate.swift */,
+				68F89BB522835AD300FC38B0 /* Info.plist */,
+			);
+			path = WishKitDemo;
+			sourceTree = "<group>";
+		};
+		68F89BBE22835BAF00FC38B0 /* WishKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				68F89BDE2284067700FC38B0 /* Types */,
+				68F89BC122835BAF00FC38B0 /* Info.plist */,
+			);
+			path = WishKitTests;
+			sourceTree = "<group>";
+		};
+		68F89BC822835F5700FC38B0 /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				68F89BC922835F5700FC38B0 /* GraphQL */,
+				68F89C102284172A00FC38B0 /* Mapping */,
+				68F89C0B228415B600FC38B0 /* WishBackend.swift */,
+			);
+			path = Backend;
+			sourceTree = "<group>";
+		};
+		68F89BC922835F5700FC38B0 /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				68F89C0D2284160900FC38B0 /* WishList */,
+				68F89BCA22835F5700FC38B0 /* API.swift */,
+			);
+			path = GraphQL;
+			sourceTree = "<group>";
+		};
+		68F89BCC2284030900FC38B0 /* MVPProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				68F89BF022840D3600FC38B0 /* WishListFlow */,
+			);
+			path = MVPProtocols;
+			sourceTree = "<group>";
+		};
+		68F89BD0228403AA00FC38B0 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				68F89BD1228403AA00FC38B0 /* Entities */,
+				68F89BD2228403AA00FC38B0 /* ValueObjects */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		68F89BD1228403AA00FC38B0 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				68F89C212284A8B700FC38B0 /* CreatingWish.swift */,
+				68F89C202284A8B700FC38B0 /* Wish.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		68F89BD2228403AA00FC38B0 /* ValueObjects */ = {
+			isa = PBXGroup;
+			children = (
+				68F89BFB22840D4400FC38B0 /* UUIDV4+ValueObject.swift */,
+				6805727E23129D8B0066F6C7 /* Category+ValueObject.swift */,
+			);
+			path = ValueObjects;
+			sourceTree = "<group>";
+		};
+		68F89BD7228405B200FC38B0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				68F89BD8228405B200FC38B0 /* ErrorDescription.swift */,
+				68F89BDA228405B200FC38B0 /* Errors.swift */,
+				68F89C0322840DED00FC38B0 /* Response.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		68F89BDE2284067700FC38B0 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				68F89BDF2284067700FC38B0 /* ValueObjects */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		68F89BDF2284067700FC38B0 /* ValueObjects */ = {
+			isa = PBXGroup;
+			children = (
+				68F89BE02284067700FC38B0 /* UUIDV4+ValueObject.swift */,
+			);
+			path = ValueObjects;
+			sourceTree = "<group>";
+		};
+		68F89BF022840D3600FC38B0 /* WishListFlow */ = {
+			isa = PBXGroup;
+			children = (
+				68F89BF122840D3600FC38B0 /* WishList+MVP.swift */,
+				68F89C1C2284A89800FC38B0 /* WishCreate+MVP.swift */,
+				68F89C1D2284A89800FC38B0 /* WishDetails+MVP.swift */,
+			);
+			path = WishListFlow;
+			sourceTree = "<group>";
+		};
+		68F89BFD22840DC800FC38B0 /* ServiceProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				68F89BFE22840DC800FC38B0 /* WishServiceProtocol.swift */,
+			);
+			path = ServiceProtocols;
+			sourceTree = "<group>";
+		};
+		68F89BFF22840DC800FC38B0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				68F89C0022840DC800FC38B0 /* WishService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		68F89C052284103400FC38B0 /* RepositoryProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				68F89C072284105900FC38B0 /* WishRepositoryProtocol.swift */,
+			);
+			path = RepositoryProtocols;
+			sourceTree = "<group>";
+		};
+		68F89C062284103E00FC38B0 /* BackendProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				68F89C092284109E00FC38B0 /* WishBackendProtocol.swift */,
+			);
+			path = BackendProtocols;
+			sourceTree = "<group>";
+		};
+		68F89C0D2284160900FC38B0 /* WishList */ = {
+			isa = PBXGroup;
+			children = (
+				68F89C1A22848CE400FC38B0 /* CreateWish.graphql */,
+				68F89C0E228416AC00FC38B0 /* Wishes.graphql */,
+				68F89C142284197E00FC38B0 /* VoteForWish.graphql */,
+				68F89C152284197E00FC38B0 /* WithdrawVoteFromWish.graphql */,
+			);
+			path = WishList;
+			sourceTree = "<group>";
+		};
+		68F89C102284172A00FC38B0 /* Mapping */ = {
+			isa = PBXGroup;
+			children = (
+				68F89C112284172A00FC38B0 /* WishList */,
+			);
+			path = Mapping;
+			sourceTree = "<group>";
+		};
+		68F89C112284172A00FC38B0 /* WishList */ = {
+			isa = PBXGroup;
+			children = (
+				68F89C122284174D00FC38B0 /* WishItem+WishesResponse.swift */,
+				68F89C1822841B0600FC38B0 /* Errors+WishList.swift */,
+				6805728023129E3C0066F6C7 /* Category+Mapping.swift */,
+			);
+			path = WishList;
+			sourceTree = "<group>";
+		};
+		68F89C25228592C900FC38B0 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				68F89C27228592E200FC38B0 /* WishListFlow */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		68F89C26228592CB00FC38B0 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				68F89C2F228599B300FC38B0 /* WishListFlow */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		68F89C27228592E200FC38B0 /* WishListFlow */ = {
+			isa = PBXGroup;
+			children = (
+				68F89C28228593E900FC38B0 /* WishListFlow.swift */,
+				68F89C2B228596BD00FC38B0 /* WishDetailsFlow.swift */,
+				68F89C2D228598F900FC38B0 /* WishCreateFlow.swift */,
+			);
+			path = WishListFlow;
+			sourceTree = "<group>";
+		};
+		68F89C2F228599B300FC38B0 /* WishListFlow */ = {
+			isa = PBXGroup;
+			children = (
+				68F89C30228599BA00FC38B0 /* WishListPresenter.swift */,
+				6889A4BD228763CE00DF5741 /* WishDetailsPresenter.swift */,
+				6889A4BB228738C000DF5741 /* WishCreatePresenter.swift */,
+			);
+			path = WishListFlow;
+			sourceTree = "<group>";
+		};
+		C408E1429869E08706C84B4C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8E8B71F59B566640AD0FDFB /* Pods-WishKit.debug.xcconfig */,
+				AA21BDC30A40F6D0DD50ABD4 /* Pods-WishKit.release.xcconfig */,
+				482F8F28F6D27B4BDFD8B0E1 /* Pods-WishKitDemo.debug.xcconfig */,
+				9C28BDE3B2DB6A773AFE1A41 /* Pods-WishKitDemo.release.xcconfig */,
+				58C10B56302A7E8147E8637B /* Pods-WishKitTests.debug.xcconfig */,
+				8CB3EC4771DDDFEF907E27F4 /* Pods-WishKitTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CAE68DC061CCEA6FF4A2A972 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A69E0A68CF2476CD78CE6E6C /* Pods_WishKit.framework */,
+				B094317FF6A41ECEFFBB39EA /* Pods_WishKitDemo.framework */,
+				AD1DA3D7815E77F0388E24F9 /* Pods_WishKitTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		68F89B9322835A4E00FC38B0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68F89B9D22835A4E00FC38B0 /* WishKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		68F89B9722835A4E00FC38B0 /* WishKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68F89BA022835A4E00FC38B0 /* Build configuration list for PBXNativeTarget "WishKit" */;
+			buildPhases = (
+				74D422A367F0F943AEA079BD /* [CP] Check Pods Manifest.lock */,
+				68F89B9322835A4E00FC38B0 /* Headers */,
+				68F89BC722835F1600FC38B0 /* Generate Apollo GraphQL API */,
+				68F89B9422835A4E00FC38B0 /* Sources */,
+				68F89B9522835A4E00FC38B0 /* Frameworks */,
+				68F89B9622835A4E00FC38B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WishKit;
+			productName = WishKit;
+			productReference = 68F89B9822835A4E00FC38B0 /* WishKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		68F89BA622835AD000FC38B0 /* WishKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68F89BB622835AD300FC38B0 /* Build configuration list for PBXNativeTarget "WishKitDemo" */;
+			buildPhases = (
+				709E183E1483ADA82A46FF34 /* [CP] Check Pods Manifest.lock */,
+				68F89BA322835AD000FC38B0 /* Sources */,
+				68F89BA422835AD000FC38B0 /* Frameworks */,
+				68F89BA522835AD000FC38B0 /* Resources */,
+				EF0069DB451497C28D930A23 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WishKitDemo;
+			productName = WishKitDemo;
+			productReference = 68F89BA722835AD000FC38B0 /* WishKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		68F89BBC22835BAF00FC38B0 /* WishKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68F89BC422835BAF00FC38B0 /* Build configuration list for PBXNativeTarget "WishKitTests" */;
+			buildPhases = (
+				B766AF8F899DF637C245304E /* [CP] Check Pods Manifest.lock */,
+				68F89BB922835BAF00FC38B0 /* Sources */,
+				68F89BBA22835BAF00FC38B0 /* Frameworks */,
+				68F89BBB22835BAF00FC38B0 /* Resources */,
+				A2C0CB77CA4397D0CFDD1591 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68F89BC322835BAF00FC38B0 /* PBXTargetDependency */,
+			);
+			name = WishKitTests;
+			productName = WishKitTests;
+			productReference = 68F89BBD22835BAF00FC38B0 /* WishKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68F89B8F22835A4E00FC38B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = 214alpha;
+				TargetAttributes = {
+					68F89B9722835A4E00FC38B0 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					68F89BA622835AD000FC38B0 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					68F89BBC22835BAF00FC38B0 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 68F89BA622835AD000FC38B0;
+					};
+				};
+			};
+			buildConfigurationList = 68F89B9222835A4E00FC38B0 /* Build configuration list for PBXProject "WishKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68F89B8E22835A4E00FC38B0;
+			productRefGroup = 68F89B9922835A4E00FC38B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68F89B9722835A4E00FC38B0 /* WishKit */,
+				68F89BA622835AD000FC38B0 /* WishKitDemo */,
+				68F89BBC22835BAF00FC38B0 /* WishKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68F89B9622835A4E00FC38B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68F89C162284197E00FC38B0 /* VoteForWish.graphql in Resources */,
+				68F89C0F228416AC00FC38B0 /* Wishes.graphql in Resources */,
+				68F89C1B22848CE400FC38B0 /* CreateWish.graphql in Resources */,
+				6889A4CD2289478500DF5741 /* WishKit.podspec in Resources */,
+				68F89C172284197E00FC38B0 /* WithdrawVoteFromWish.graphql in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68F89BA522835AD000FC38B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68F89BBB22835BAF00FC38B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		68F89BC722835F1600FC38B0 /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APOLLO_FRAMEWORK_PATH=\"$(eval find $FRAMEWORK_SEARCH_PATHS -name \"Apollo.framework\" -maxdepth 1)\"\n\nif [ -z \"$APOLLO_FRAMEWORK_PATH\" ]; then\necho \"error: Couldn't find Apollo.framework in FRAMEWORK_SEARCH_PATHS; make sure to add the framework to your project.\"\nexit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n$APOLLO_FRAMEWORK_PATH/check-and-run-apollo-cli.sh codegen:generate --queries=\"$(find . -name '*.graphql')\" --schema=schema.json Backend/GraphQL/API.swift --namespace=\"API\"\n";
+		};
+		709E183E1483ADA82A46FF34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WishKitDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74D422A367F0F943AEA079BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WishKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2C0CB77CA4397D0CFDD1591 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WishKitTests/Pods-WishKitTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WishKitTests/Pods-WishKitTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WishKitTests/Pods-WishKitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B766AF8F899DF637C245304E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WishKitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF0069DB451497C28D930A23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WishKitDemo/Pods-WishKitDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WishKitDemo/Pods-WishKitDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WishKitDemo/Pods-WishKitDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68F89B9422835A4E00FC38B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68F89BCB22835F5700FC38B0 /* API.swift in Sources */,
+				68F89C082284105900FC38B0 /* WishRepositoryProtocol.swift in Sources */,
+				68F89C2E228598F900FC38B0 /* WishCreateFlow.swift in Sources */,
+				68F89C1F2284A89800FC38B0 /* WishDetails+MVP.swift in Sources */,
+				68F89C0122840DC900FC38B0 /* WishServiceProtocol.swift in Sources */,
+				68F89C222284A8B700FC38B0 /* Wish.swift in Sources */,
+				68F89BDB228405B200FC38B0 /* ErrorDescription.swift in Sources */,
+				68F89C0422840DED00FC38B0 /* Response.swift in Sources */,
+				6805727F23129D8C0066F6C7 /* Category+ValueObject.swift in Sources */,
+				68F89C0222840DC900FC38B0 /* WishService.swift in Sources */,
+				68F89C1E2284A89800FC38B0 /* WishCreate+MVP.swift in Sources */,
+				68F89C2C228596BD00FC38B0 /* WishDetailsFlow.swift in Sources */,
+				6889A4BC228738C000DF5741 /* WishCreatePresenter.swift in Sources */,
+				68F89BF422840D3600FC38B0 /* WishList+MVP.swift in Sources */,
+				68F89C31228599BA00FC38B0 /* WishListPresenter.swift in Sources */,
+				6889A4BE228763CE00DF5741 /* WishDetailsPresenter.swift in Sources */,
+				68F89C232284A8B700FC38B0 /* CreatingWish.swift in Sources */,
+				68F89C0A2284109E00FC38B0 /* WishBackendProtocol.swift in Sources */,
+				68F89C29228593E900FC38B0 /* WishListFlow.swift in Sources */,
+				17441668228A108100715846 /* WishRepository.swift in Sources */,
+				68F89C0C228415B600FC38B0 /* WishBackend.swift in Sources */,
+				68F89BDD228405B200FC38B0 /* Errors.swift in Sources */,
+				68F89BFC22840D4400FC38B0 /* UUIDV4+ValueObject.swift in Sources */,
+				6805728123129E3C0066F6C7 /* Category+Mapping.swift in Sources */,
+				68F89C132284174D00FC38B0 /* WishItem+WishesResponse.swift in Sources */,
+				68F89C1922841B0600FC38B0 /* Errors+WishList.swift in Sources */,
+				6889A4EB228AE6C100DF5741 /* WishKitDatabaseFactory.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68F89BA322835AD000FC38B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68F89BAA22835AD000FC38B0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68F89BB922835BAF00FC38B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68F89BE12284067700FC38B0 /* UUIDV4+ValueObject.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		68F89BC322835BAF00FC38B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68F89BA622835AD000FC38B0 /* WishKitDemo */;
+			targetProxy = 68F89BC222835BAF00FC38B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		68F89B9E22835A4E00FC38B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		68F89B9F22835A4E00FC38B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		68F89BA122835A4E00FC38B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8E8B71F59B566640AD0FDFB /* Pods-WishKit.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9TMYGKKAAG;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = WishKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.214alpha.WishKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		68F89BA222835A4E00FC38B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA21BDC30A40F6D0DD50ABD4 /* Pods-WishKit.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9TMYGKKAAG;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = WishKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.214alpha.WishKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		68F89BB722835AD300FC38B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 482F8F28F6D27B4BDFD8B0E1 /* Pods-WishKitDemo.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9TMYGKKAAG;
+				INFOPLIST_FILE = WishKitDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.214alpha.WishKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		68F89BB822835AD300FC38B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C28BDE3B2DB6A773AFE1A41 /* Pods-WishKitDemo.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9TMYGKKAAG;
+				INFOPLIST_FILE = WishKitDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.214alpha.WishKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		68F89BC522835BAF00FC38B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58C10B56302A7E8147E8637B /* Pods-WishKitTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9TMYGKKAAG;
+				INFOPLIST_FILE = WishKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.214alpha.WishKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WishKitDemo.app/WishKitDemo";
+			};
+			name = Debug;
+		};
+		68F89BC622835BAF00FC38B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CB3EC4771DDDFEF907E27F4 /* Pods-WishKitTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9TMYGKKAAG;
+				INFOPLIST_FILE = WishKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.214alpha.WishKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WishKitDemo.app/WishKitDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68F89B9222835A4E00FC38B0 /* Build configuration list for PBXProject "WishKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68F89B9E22835A4E00FC38B0 /* Debug */,
+				68F89B9F22835A4E00FC38B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68F89BA022835A4E00FC38B0 /* Build configuration list for PBXNativeTarget "WishKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68F89BA122835A4E00FC38B0 /* Debug */,
+				68F89BA222835A4E00FC38B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68F89BB622835AD300FC38B0 /* Build configuration list for PBXNativeTarget "WishKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68F89BB722835AD300FC38B0 /* Debug */,
+				68F89BB822835AD300FC38B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68F89BC422835BAF00FC38B0 /* Build configuration list for PBXNativeTarget "WishKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68F89BC522835BAF00FC38B0 /* Debug */,
+				68F89BC622835BAF00FC38B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68F89B8F22835A4E00FC38B0 /* Project object */;
+}

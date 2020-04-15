@@ -1,0 +1,58 @@
+PODS:
+  - Apollo (0.10.0):
+    - Apollo/Core (= 0.10.0)
+  - Apollo/Core (0.10.0)
+  - FlowKit (0.0.2)
+  - Nimble (8.0.1)
+  - Quick (2.0.0)
+  - Realm (3.16.1):
+    - Realm/Headers (= 3.16.1)
+  - Realm/Headers (3.16.1)
+  - RealmSwift (3.16.1):
+    - Realm (= 3.16.1)
+  - WishKit (0.0.1):
+    - Apollo (= 0.10.0)
+    - FlowKit (= 0.0.2)
+    - RealmSwift (= 3.16.1)
+
+DEPENDENCIES:
+  - Apollo (= 0.10.0)
+  - "FlowKit (from `git@gitlab.com:214alpha/utilities/flowkit.git`, commit `5deb630fef942d4c3f02c7f653731bf5f667b2f8`)"
+  - Nimble
+  - Quick
+  - RealmSwift (= 3.16.1)
+  - WishKit (from `.`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Apollo
+    - Nimble
+    - Quick
+  trunk:
+    - Realm
+    - RealmSwift
+
+EXTERNAL SOURCES:
+  FlowKit:
+    :commit: 5deb630fef942d4c3f02c7f653731bf5f667b2f8
+    :git: "git@gitlab.com:214alpha/utilities/flowkit.git"
+  WishKit:
+    :path: "."
+
+CHECKOUT OPTIONS:
+  FlowKit:
+    :commit: 5deb630fef942d4c3f02c7f653731bf5f667b2f8
+    :git: "git@gitlab.com:214alpha/utilities/flowkit.git"
+
+SPEC CHECKSUMS:
+  Apollo: aa9b870203900b9526332ea3d12c37b4dc6ce1b9
+  FlowKit: 3cad66ad0fcbc997f643d36dfe4c4b8207ff2f8d
+  Nimble: 45f786ae66faa9a709624227fae502db55a8bdd0
+  Quick: ce1276c7c27ba2da3cb2fd0cde053c3648b3b22d
+  Realm: 601cacc51d8be3b17a377ef787be0f6ee0e76cf1
+  RealmSwift: 486f2e09d5a8ccff63ed66e48d0846b111deb5e5
+  WishKit: b50c99a454e570d9ec16b101efe0f4632803646e
+
+PODFILE CHECKSUM: edb1ba82be932f0141534f980a1cd026b9c59afe
+
+COCOAPODS: 1.8.0.beta.2

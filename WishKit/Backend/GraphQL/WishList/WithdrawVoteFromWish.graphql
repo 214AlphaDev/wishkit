@@ -1,0 +1,15 @@
+mutation WithdrawVoteFromWish($id: UUIDV4!) {
+  withdrawVote(id: $id) {
+    wish {
+      id,
+      name,
+      description,
+      story,
+      votes,
+      votedOnIt,
+      category
+    },
+    votesLeft,
+    error
+  }
+}

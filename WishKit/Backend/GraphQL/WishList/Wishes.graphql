@@ -1,0 +1,11 @@
+query Wishes($fromId: UUIDV4, $count: Int!) {
+  wishes(start: $fromId, next: $count) {
+    id,
+    name,
+    description,
+    story,
+    votes,
+    votedOnIt,
+    category
+  }
+}
